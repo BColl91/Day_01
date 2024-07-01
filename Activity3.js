@@ -1,13 +1,7 @@
 //Activity 3
+const today = new Date();
+const birthday = new Date('2024-07-10');
+const difInMil = birthday - today;
+const difInDays = Math.ceil(difInMil / (1000 * 60 * 60 * 24));
 
-const date1 = new Date('December 17, 1995 03:24:00');
-// Sun Dec 17 1995 03:24:00 GMT...
-
-const date2 = new Date('1995-12-17T03:24:00');
-// Sun Dec 17 1995 03:24:00 GMT...
-
-console.log(date1 === date2);
-// Expected output: false
-
-console.log(date1 - date2);
-// Expected output: 0
+console.log(`There are ${difInDays} days left until your birthday.`);
